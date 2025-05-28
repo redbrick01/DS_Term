@@ -3,10 +3,6 @@ from sklearn.preprocessing import LabelEncoder
 
 df = pd.read_csv("DS_term/2_Cleaning_DataSet.csv", low_memory=False)
 
-df_normal = df[df['Label'] == 0].copy()
-df_attack = df[df['Label'] == 1].copy()
-
-
 categorical_cols = df.select_dtypes(include=['object']).columns.tolist()
 categorical_cols = [col for col in categorical_cols if col not in ['Label']]
 for col in categorical_cols:
