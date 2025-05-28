@@ -10,5 +10,5 @@ for col in categorical_cols:
     df[col] = le.fit_transform(df[col])
 
 
-df.to_csv("DS_term/DecisionTree/3_Preprocessing_DataSet.csv", index=False)
+df.to_csv("DS_term/RandomForest/3_Preprocessing_DataSet.csv", index=False)
 

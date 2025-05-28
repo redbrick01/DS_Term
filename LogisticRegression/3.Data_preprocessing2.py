@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import RobustScaler
 import seaborn as sns
 
+
 df = pd.read_csv("DS_term/2_Cleaning_DataSet.csv", low_memory=False)
 
 log_transform_cols = [
